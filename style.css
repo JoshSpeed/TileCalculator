@@ -1,0 +1,116 @@
+.container {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.grid-item {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.grid-1 {
+    background: url("/images/BlackRaisedDiskTile.jpg") center;
+    background-size: cover;
+}
+
+.grid-2 {
+    background: url("/images/GraphiteRaisedDisk.jpg") center;
+    background-size: cover;
+}
+
+.grid-3 {
+    background: url("/images/RaisedDiskDarkBlue.jpg") center;
+    background-size: cover;
+}
+
+.grid-4 {
+    background: url("/images/RaisedDiskDarkGrey.jpg") center;
+    background-size: cover;
+}
+
+.grid-5 {
+    background: url("/images/RaisedDiskLightGrey.jpg") center;
+    background-size: cover;
+}
+
+.grid-6 {
+    background: url("/images/SmoothBlack.jpg") center;
+    background-size: cover;
+}
+
+.grid-7 {
+    background: url("/images/SmoothDarkBlue.jpg") center;
+    background-size: cover;
+}
+
+.grid-8 {
+    background: url("/images/SmoothDarkGrey.jpg") center;
+    background-size: cover;
+}
+
+.grid-9 {
+    background: url("/images/SmoothGraphite.jpg") center;
+    background-size: cover;
+}
+
+.grid-10 {
+    background: url("/images/SmoothGreen.jpg") center;
+    background-size: cover;
+}
+
+.grid-11 {
+    background: url("/images/SmoothLightGrey.jpg") center;
+    background-size: cover;
+}
+
+.grid-12 {
+    background: url("/images/SmoothRed.jpg") center;
+    background-size: cover;
+}
+
+.grid-13 {
+    background: url("/images/SmoothYellow.jpg") center;
+    background-size: cover;
+}
+
+.selectedTile {
+    margin-bottom: 30px;
+}
+
+/* Tile Preview Popup */
+
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 75%;
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5rem;
+    height: 40rem;
+    background-position: center;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tile Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Tile Calculator</h1>
+
+
+    <div class="container">
+        <div class="grid-item grid-1"></div>
+        <div class="grid-item grid-2"></div>
+        <div class="grid-item grid-3"></div>
+        <div class="grid-item grid-4"></div>
+        <div class="grid-item grid-5"></div>
+        <div class="grid-item grid-6"></div>
+        <div class="grid-item grid-7"></div>
+        <div class="grid-item grid-8"></div>
+        <div class="grid-item grid-9"></div>
+        <div class="grid-item grid-10"></div>
+        <div class="grid-item grid-11"></div>
+        <div class="grid-item grid-12"></div>
+        <div class="grid-item grid-13"></div>
+    </div>
+
+    <label for="selectedTile">Tile Selected:</label>
+    <input type="text" placeholder="None" class="selectedTile">
+    <button class="preview">Preview</button>
+
+    <form action="" id="tile-form">
+        <label for="width">Width:</label>
+        <input type="text" placeholder="Width" class="width">
+
+        <label for="length">Length:</label>
+        <input type="text" placeholder="Length" class="length">
+
+        <button type="button">Calculate</button>
+    </form>
+
+    <div>
+        <p>Total Square Metre Size = <span class="total-size">0</span></p>
+        <p>Number of Tiles Needed = <span class="total-tiles">0</span></p>
+        <p>Number of Ramps Needed = <span class="total-ramps">0</span></p>
+    </div>
+
+    <div class="popup hidden">
+        <div class="popup-content">
+        </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
