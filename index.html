@@ -39,22 +39,30 @@
 
     <label for="selectedTile">Tile Selected:</label>
     <input type="text" placeholder="None" class="selectedTile">
-    <button class="preview">Preview</button>
+    <button class="preview">Preview</button> <br><br>
 
-    <form action="" id="tile-form">
-        <label for="width">Width:</label>
-        <input type="text" placeholder="Width" class="width">
 
-        <label for="length">Length:</label>
-        <input type="text" placeholder="Length" class="length">
 
-        <button type="button">Calculate</button>
-    </form>
+
+    <label for="tile-price">Tile Price:</label>
+    <input readonly type="text" placeholder="None" class="tile-price"> <br>
+    <label for="ramp-price">Ramp Price:</label>
+    <input readonly type="text" placeholder="None" class="ramp-price"> <br> <br>
+
+    <label for="width">Width:</label>
+    <input type="text" placeholder="Width" class="width">
+
+    <label for="length">Length:</label>
+    <input type="text" placeholder="Length" class="length">
+
+    <button class="button">Calculate</button>
+
 
     <div>
         <p>Total Square Metre Size = <span class="total-size">0</span></p>
         <p>Number of Tiles Needed = <span class="total-tiles">0</span></p>
         <p>Number of Ramps Needed = <span class="total-ramps">0</span></p>
+        <p>Total Price = £ <span class="total-price">0</span></p>
     </div>
 
     <div class="popup hidden">
